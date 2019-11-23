@@ -23,7 +23,7 @@ M = A - B - t*eye(2);
 F = [C, M <= -eta*eye(2)];
 optimize(F,t);
 
-% maximum eigenvalues
+% minimized t
 t = value(t)
 
 % x_{i}
